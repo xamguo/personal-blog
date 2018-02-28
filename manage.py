@@ -1,7 +1,9 @@
-from flask_script import Manager
-from backend.app import app
+#!/usr/bin/env python
 
-manager = Manager(app)
+from flask_script import Manager
+from backend.app import create_app
+
+manager = Manager(create_app())
 
 @manager.command
 def hello():
