@@ -12,9 +12,12 @@ class Config:
         pass
 
 class DevelopmentConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///test'
+    pass
+
+class TestConfig(Config):
+    pass
 
 config = {
-    'development': Config,
-    'second': DevelopmentConfig,
+    'development': DevelopmentConfig,
+    'test': TestConfig,
 }
