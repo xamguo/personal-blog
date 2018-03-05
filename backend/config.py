@@ -12,6 +12,7 @@ class Config:
         pass
 
 class DevelopmentConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'mysql://root:@127.0.0.1/personal_blog'
     pass
 
 class TestConfig(Config):
